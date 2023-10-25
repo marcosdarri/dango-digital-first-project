@@ -1,0 +1,61 @@
+<div class0="w-full">
+  {% render 'color-picker-title' %}
+  {% render 'color-picker-collections' %}
+  {% render 'color-picker-not-sure' %}
+  {% render 'color-picker-carousel' %}
+
+</div>
+
+{% schema %}
+  {
+    "name": "Color Picker",
+    "settings": [
+      {
+        "type": "text",
+        "id": "color_picker_transparent_title",
+        "label": "color_picker_transparent_title",
+        "default": "I Need Help",
+        "info": "This is the first part of the title for the color picker section."
+      },
+      {
+        "type": "text",
+        "id": "color_picker_title",
+        "label": "color_picker_title",
+        "default": "choosing a color",
+        "info": "This is the second part of the title for the color picker section."
+      },
+      {
+        "type": "text",
+        "id": "color_picker_button_one",
+        "label": "color_picker_button_one",
+        "default": "collection 1",
+        "info": "This is the text for the first collections button."
+      },
+      {
+        "type": "text",
+        "id": "color_picker_button_two",
+        "label": "color_picker_button_two",
+        "default": "collection 2",
+        "info": "This is the text for the second collections button."
+      }, {
+        "type": "text",
+        "id": "color_picker_button_three",
+        "label": "color_picker_button_three",
+        "default": "collection 3",
+        "info": "This is the text for the third collections button."
+      }, {
+        "type": "text",
+        "id": "color_picker_button_four",
+        "label": "color_picker_button_four",
+        "default": "collection 4",
+        "info": "This is the text for the fourth collections button."
+      }, {
+        "type": "text",
+        "id": "color_picker_button_five",
+        "label": "color_picker_button_five",
+        "default": "collection 5",
+        "info": "This is the text for the fifth collections button."
+      }
+    ]
+  }
+{% endschema %}

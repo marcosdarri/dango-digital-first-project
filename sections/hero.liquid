@@ -1,0 +1,40 @@
+<div class="h-[681px] md:h-[613px] flex justify-center">
+  {% render 'hero-background' %}
+  <div class="flex flex-col flex-col-reverse w-full absolute h-[681px] pt-6 md:mt-0 md:h-[613px] md:w-[800px] md:flex md:flex-row md:justify-between md:items-center herolg:w-full herolg:max-w-screen-maxxl">
+    {% render 'hero-text' %}
+    {% render 'hero-image' %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Hero",
+    "settings": [
+      {
+        "type": "text",
+        "id": "hero_title",
+        "label": "title",
+        "default": "Lorem ipsum dolor sit amet",
+        "info": "This is the hero title"
+      }, {
+        "type": "text",
+        "id": "hero_sub_title",
+        "label": "sub_title",
+        "default": "Nunc porttitor tortor metus, nec sagittis lectus accumsan quis. Aenean euismod mollis tempor.",
+        "info": "This is the hero subtitle"
+      }, {
+        "type": "text",
+        "id": "hero_primary_button",
+        "label": "primary_button",
+        "default": "shop now",
+        "info": "This is the hero primary button text"
+      }, {
+        "type": "text",
+        "id": "hero_secondary_button",
+        "label": "secondary_button",
+        "default": "take the quiz",
+        "info": "This is the hero primary secondary text"
+      }
+    ]
+  }
+{% endschema %}

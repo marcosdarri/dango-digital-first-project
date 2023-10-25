@@ -1,0 +1,13 @@
+<div class="relative text-center w-[300px] mt-10 h-full self-center md:self-auto md:text-left md:h-[300px] md:w-[300px] md:m-12 herolg:ml-[80px]  md:herolg:h-4/5 herolg:mr-0 herolg:w-full herolg:w-40 herolg:mt-[135px]">
+      <h1 class="w-full text-primary text-[37px] -bold mb-5 w-[270px] leading-[41.5px] md:font-black herolg:w-[507px] herolg:leading-[61px] herolg:text-[60px]">{{ section.settings.hero_title }}</h1>
+      <p class="hidden herolg:block text-primary proxima_nova w-[482px] mb-5">{{ section.settings.hero_sub_title }}</p>
+      <div class="flex flex-col items-center w-full md:items-left md:flex-row md:w-[390px] md:flex md:justify-between">
+        <button class="flex justify-around items-center text-white bg-primary rounded w-[185px] h-[57px] font-bold text-[13px] rounded-[10px] transform transform transition-transform duration-300 hover:scale-110">{{ section.settings.hero_primary_button | upcase }} {% render 'icon-chevron-right' %}</button>
+        <button class="flex justify-around items-center w-[185px] h-[57px] font-bold text-[13px] rounded-[10px] transform transform transition-transform duration-300 hover:scale-110 md:text-primary md:border-1 md:border-primary">{{ section.settings.hero_secondary_button | upcase }} <span class="hidden md:flex">{% render 'icon-chevron-right' %}</span></button>
+      </div>
+      <div class="absolute flex justify-between w-[90px] bottom-[95px] right-0 left-0 m-auto md:bottom-[50px] md:m-0">
+        <button class="flex justify-center items-center text-primary w-[41px] h-[31px] border-1.5 border-primary rounded-[99px] transform transform transition-transform duration-300 hover:scale-110">{% render 'icon-arrow-left' %}</button>
+        <button class="flex justify-center items-center text-white w-[41px] h-[31px] bg-primary rounded rounded-[99px] transform transform transition-transform duration-300 hover:scale-110">{% render 'icon-arrow-right' %}</button>
+      </div>
+    </div>
+    

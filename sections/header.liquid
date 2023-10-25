@@ -1,0 +1,20 @@
+<div class="bg-white w-full h-24">
+  <div class="bg-primary w-full h-6 flex items-center justify-center">
+    <p class="text-white text-xs">{{ "30% Off All Orders Until 4/27" | upcase }}</p>
+  </div>
+  <div class="h-[72px] flex justify-between bg-white">
+    <div class="hidden md:block"></div>
+    <div class="hover:cursor-pointer w-[38px] flex items-center m-2.5 md:hidden">
+      {% render 'icon-burger' %}
+    </div>
+    <div class="hidden md:flex text-primary justify-between w-[564px]">
+      {% for link in linklists.main-menu.links %}
+        <a href="{{ link.url }}" class="h-[72px] min-w-[70px] font-bold text-xs flex items-center text-base text-primary font-proximanova font-semibold {% if link.active == true %} border-b border-b-3  {% endif %}">{{ link.title | upcase }}</a>
+      {% endfor %}
+    </div>
+    <div class="hover:cursor-pointer w-[38px] flex items-center m-2.5 relative">
+      {% render 'icon-shopping-bag' %}
+      <div class="absolute bottom-[12px] left-[14px] bg-primary w-3 h-3 rounded-full border-1 border-purple"></div>
+    </div>
+  </div>
+</div>

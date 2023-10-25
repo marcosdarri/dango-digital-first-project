@@ -1,0 +1,84 @@
+<div class="swiper-slide m-auto flex justify-between">
+  <img
+    class="w-[156px] h-[156px] flex-shrink-0"
+    src="../assets/carousel-product-1.png"
+    alt="carousel product" />
+  {% if section.settings.most_popular %}
+    <div>MOST POPULAR</div>
+  {% endif %}
+  <p></p>
+  <img
+    class="w-[156px] h-[156px] flex-shrink-0"
+    src="../assets/carousel-product-2.png"
+    alt="carousel product" />
+  {% if section.settings.most_popular %}
+    <div>MOST POPULAR</div>
+  {% endif %}
+  <p></p>
+</div>
+
+<div class="swiper-slide m-auto flex justify-between ml-5">
+  <img
+    class="w-[156px] h-[156px] flex-shrink-0"
+    src="../assets/carousel-product-3.png"
+    alt="carousel product" />
+  {% if section.settings.most_popular %}
+    <div>MOST POPULAR</div>
+  {% endif %}
+  <p></p>
+  <img
+    class="w-[156px] h-[156px] flex-shrink-0"
+    src="../assets/carousel-product-4.png"
+    alt="carousel product" />
+  {% if section.settings.most_popular %}
+    <div>MOST POPULAR</div>
+  {% endif %}
+  <p></p>
+</div>
+
+{% schema %}
+  {
+    "name": "Carousel Product Cards",
+    "settings": [
+      {
+        "type": "text",
+        "id": "product_one",
+        "label": "product_one",
+        "default": "Product 1",
+        "info": "Info for product one",
+        "most_popular": true
+      },
+      {
+        "type": "text",
+        "id": "product_two",
+        "label": "product_two",
+        "default": "Product 2",
+        "info": "Info for product two",
+        "most_popular": false
+      },
+      {
+        "type": "text",
+        "id": "product_three",
+        "label": "product_three",
+        "default": "Product 3",
+        "info": "Info for product three",
+        "most_popular": false
+      },
+      {
+        "type": "text",
+        "id": "product_four",
+        "label": "product_four",
+        "default": "Product 4",
+        "info": "Info for product four",
+        "most_popular": false
+      }, {
+        "type": "text",
+        "id": "product_five",
+        "label": "product_five",
+        "default": "Product 5",
+        "info": "Info for product five",
+        "most_popular": false
+      }
+    ]
+  }
+{% endschema %}

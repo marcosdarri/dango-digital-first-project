@@ -1,0 +1,30 @@
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper ml-9">
+    <!-- Slides -->
+    {% render 'color-picker-carousel-cards' %}
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+ {% comment %}  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div> {% endcomment %}
+
+  <!-- If we need scrollbar -->
+ {% comment %}  <div class="swiper-scrollbar"></div> {% endcomment %}
+</div>
+
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+
+  new Swiper('.swiper', {
+  direction: 'horizontal',
+  autoplay: {
+    delay: 2500,
+  },
+  }
+);
+</script>
